@@ -1,0 +1,14 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
+{
+    "name": "Wine DevContainer",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "appPort": [
+        "8006:8006"
+    ],
+    "postCreateCommand": "/usr/bin/supervisord",
+    // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+    "remoteUser": "root"
+}
